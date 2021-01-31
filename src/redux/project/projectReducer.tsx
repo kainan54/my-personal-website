@@ -3,6 +3,9 @@ interface Project {
     videoUrl: string;
     imageUrl: string;
     id: number;
+    icons: Array<{ title: string; icon: string }>;
+    descrip: string;
+    features: Array<string>;
 }
 interface RootState {
     currentProject: Project | null;

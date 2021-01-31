@@ -1,5 +1,4 @@
 .project-card {
-    border: green 2px solid;
     height: 30rem;
     width: 30rem;
     overflow: hidden;
@@ -11,7 +10,14 @@
         height: 100%;
         width: 100%;
         background-size: cover;
+        background-position: center;
         z-index: 1;
+    }
+    .project-card-title {
+        position: absolute;
+        z-index: 3;
+        top: 5%;
+        font-size: 3rem;
     }
     .arrow-btn {
         position: absolute;
@@ -19,6 +25,13 @@
         height: 25%;
         width: 60%;
         z-index: 1;
+    }
+
+    .project-close-btn {
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border: 1px solid black;
     }
 }
 

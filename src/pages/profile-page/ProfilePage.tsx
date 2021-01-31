@@ -43,7 +43,7 @@ const ProfilePage: React.FC<RouteComponentProps> = function () {
                 </div>
                 <div className="profile-res-section-2">
                     <div className="profile-about-me">
-                        <h2>How I become a Programmer</h2>
+                        <h2>How I became a Programmer</h2>
                         <p>
                             Hello, my name is Kainan Doneson, and I am an aspiring full stack developer and a graduate
                             of the Flatiron School Bootcamp. I started my coding journey around Christmas in 2019 when

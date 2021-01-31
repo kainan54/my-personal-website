@@ -1,3 +1,4 @@
+@import '../../mixins.scss';
 .project-viewer {
     display: flex;
     flex-direction: column;
@@ -7,6 +8,7 @@
     align-items: center;
     background-image: linear-gradient(to right, rgba(4, 89, 110, 0.8), rgba(39, 93, 194, 0.76));
     padding: 2.3rem;
+    @include nicerOverFlow();
     h1 {
         font-size: 5rem;
         width: 100%;
@@ -18,9 +20,13 @@
         padding: 1rem;
     }
     .project-card-zone {
+        width: 100%;
+        max-height: fit-content;
+        min-height: 90%;
         padding: 4rem;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-between;
         box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
         .project-card {
@@ -28,16 +34,6 @@
             height: 27rem;
             width: 30rem;
         }
-    }
-
-    .project-display-card {
-        background-color: white;
-        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-        height: 90%;
-        width: 50%;
-        position: absolute;
-        top: 5%;
-        z-index: 3;
     }
 }
 .project-dimmed {

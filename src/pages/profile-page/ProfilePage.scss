@@ -1,3 +1,4 @@
+@import '../../mixins.scss';
 .profile-page {
     height: 100%;
     width: 100%;
@@ -75,21 +76,7 @@
         }
 
         .profile-res-section-2 {
-            overflow: scroll;
-            overflow-x: hidden;
-            &::-webkit-scrollbar {
-                width: 1em;
-            }
-
-            &::-webkit-scrollbar-track {
-                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-                border-radius: 1rem;
-            }
-
-            &::-webkit-scrollbar-thumb {
-                background-color: darkgrey;
-                outline: 1px solid slategrey;
-            }
+            @include nicerOverFlow();
             display: flex;
             flex-wrap: wrap;
             padding: 1rem;
@@ -140,7 +127,7 @@
         }
     }
     body {
-        overflow: scroll;
+        @include nicerOverFlow();
     }
     #root {
         .profile-resume-container {

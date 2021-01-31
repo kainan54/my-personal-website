@@ -9,12 +9,18 @@ interface Props extends rProps {
     videoUrl: string;
     imageUrl: string;
     id: number;
+    icons: Array<{ title: string; icon: string }>;
+    descrip: string;
+    features: Array<string>;
 }
 interface Project {
     title: string;
     videoUrl: string;
     imageUrl: string;
     id: number;
+    icons: Array<{ title: string; icon: string }>;
+    descrip: string;
+    features: Array<string>;
 }
 
 interface Action {
@@ -27,7 +33,16 @@ const mdp = (dispatch: (action: Action) => void) => ({
 const connector = connect(null, mdp);
 type rProps = ConnectedProps<typeof connector>;
 
-const ProjectCard: React.FC<Props> = function ({ title, videoUrl, imageUrl, id, UPDATE_PROJECT_VIEW }: Props) {
+const ProjectCard: React.FC<Props> = function ({
+    title,
+    videoUrl,
+    imageUrl,
+    id,
+    icons,
+    descrip,
+    features,
+    UPDATE_PROJECT_VIEW,
+}: Props) {
     const [buttonVisibility, setButtonVisibility] = useState(false);
     const [zoomTrigger, setZoomTrigger] = useState('');
     return (
@@ -44,10 +59,13 @@ const ProjectCard: React.FC<Props> = function ({ title, videoUrl, imageUrl, id, 
                 style={{ backgroundImage: `url(${imageUrl})` }}
             ></div>
             {buttonVisibility ? (
-                <ArrowButton clickFn={() => UPDATE_PROJECT_VIEW({ title, videoUrl, imageUrl, id })}>
+                <ArrowButton
+                    clickFn={() => UPDATE_PROJECT_VIEW({ title, videoUrl, imageUrl, id, icons, descrip, features })}
+                >
                     More Details
                 </ArrowButton>
             ) : null}
+            <p className="project-card-title">{title}</p>
         </div>
     );
 };
