@@ -57,8 +57,7 @@
     text-decoration: underline;
 }
 .social-zone {
-    padding: 0 30%;
-    padding-top: 1rem;
+    padding: 2% 30%;
     height: 8rem;
     width: 100%;
     display: flex;
@@ -95,5 +94,44 @@
     100% {
         opacity: 1;
         transform: translate(0);
+    }
+}
+@media screen and (max-width: 920px) {
+    #root {
+        .content {
+            height: 60%;
+            .expanding-image-container {
+                height: 100%;
+            }
+            .home-header {
+                font-size: 4rem;
+            }
+
+            .home-sub-header {
+                font-size: 2rem;
+                padding: 0 0.2rem;
+            }
+            .home-nav-btns {
+                margin-top: 3rem;
+                .arrow-btn {
+                    height: 5.5rem;
+                    width: 11rem;
+                    .arrow-text {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .social-zone {
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: fit-content;
+            justify-content: space-evenly;
+            padding: 0;
+            .social-link {
+                height: 11rem;
+                margin: 1rem;
+            }
+        }
     }
 }

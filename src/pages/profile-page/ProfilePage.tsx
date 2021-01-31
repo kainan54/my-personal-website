@@ -3,7 +3,6 @@ import { RouteComponentProps } from 'react-router-dom';
 import './ProfilePage.scss';
 import EnsoPortrait from '../../components/enso-portrait/EnsoPortrait';
 import ProPic from '../../assets/pro-pic.jpg';
-import SpeechBubble from '../../components/speech-bubble/SpeechBubble';
 import IconHeader from '../../components/icon-w-header/IconHeader';
 import jsLogo from '../../assets/js-logo.png';
 import tsLogo from '../../assets/ts-logo.png';
@@ -21,12 +20,6 @@ const ProfilePage: React.FC<RouteComponentProps> = function () {
             <div className="profile-resume-container">
                 <div className="profile-res-section-1">
                     <EnsoPortrait img={ProPic}>Kainan Doneson</EnsoPortrait>
-                    <SpeechBubble>
-                        {`Most of my projects use React/Rails/Redux stack with yarn or npm as my package manager. My older
-                        projects use JS, but I've been utilizing and loving TS recently too. I have a voracious appetite
-                        for learning new technologies and want to work for companies that encourage self-growth while
-                        creating quality. products/solutions.`}
-                    </SpeechBubble>
                     <div className="profile-skills">
                         <h4> Main Programming Skills:</h4>
                         <div className="profile-icon-zone">
@@ -51,10 +44,13 @@ const ProfilePage: React.FC<RouteComponentProps> = function () {
                             Haverbeke. I must admit getting introduced to concepts such as recursion three chapters into
                             the text/two weeks into learning code was a bit intimidating. However, even more so than the
                             confusion was the embers of a more profound passion rapidly gaining heat inside me; I had
-                            become hooked. In between pockets of work, I would sift through the chapters absorbing all
-                            that I could, dreaming of the day I could make software development into a career. And then
-                            it happened; the pandemic took the world by storm, shattering our social norms and
-                            destroying the industry I had been working in. It was now or never for me. And so, in the
+                            become hooked.
+                        </p>
+                        <p>
+                            In between pockets of work, I would sift through the chapters absorbing all that I could,
+                            dreaming of the day I could make software development into a career. And then it happened;
+                            the pandemic took the world by storm, shattering our social norms and destroying the
+                            industry I had been working in. It was now or never for me. And so, in the face of tragedy,
                             face of tragedy, I enrolled in the Flatiron Bootcamp to pursue my dream of being a web
                             developer.
                         </p>
@@ -65,17 +61,19 @@ const ProfilePage: React.FC<RouteComponentProps> = function () {
                             my time at the apple store, but I don't believe the physical tools translate to programming
                             much. Sadly, box-cutters and cardboard aren't entirely databases; selling iPhones doesn't
                             help develop react components, and I don't believe crafting alcoholic beverages is quite the
-                            customer solution your tech companies are after. However, these work experiences allowed me
-                            to work amongst diverse teams of both large and small sizes. The abilities that translate
-                            are interpersonal and come from this—working back of house in retail taught me how to work
-                            through ambiguity. For maximum efficiency, you would need to base your actions based on the
-                            current state of operations, cognizant of the present hierarchy of priorities. In contrast,
-                            working in sales was more communication-oriented. Solving customer problems requires active
-                            listening; I had to seek to understand rather than retort. Furthermore, Efficiently managing
-                            high customer volume requires the team to cooperate in evenly delegating responsibilities.
-                            Lastly, working in service taught me not to take things personally. Meeting many people with
-                            a broad spectrum of personalities and experiences reminds me to appreciate the vast world
-                            around us.`}
+                            customer solution your tech companies are after.`}
+                        </p>
+                        <p>
+                            However, these work experiences allowed me to work amongst diverse teams of both large and
+                            small sizes. The abilities that translate are interpersonal and come from this—working back
+                            of house in retail taught me how to work through ambiguity. For maximum efficiency, you
+                            would need to base your actions based on the current state of operations, cognizant of the
+                            present hierarchy of priorities. In contrast, working in sales was more
+                            communication-oriented. Solving customer problems requires active listening; I had to seek
+                            to understand rather than retort. Furthermore, Efficiently managing high customer volume
+                            requires the team to cooperate in evenly delegating responsibilities. Lastly, working in
+                            service taught me not to take things personally. Meeting many people with a broad spectrum
+                            of personalities and experiences reminds me to appreciate the vast world around us.
                         </p>
                     </div>
 

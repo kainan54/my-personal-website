@@ -28,6 +28,7 @@
         top: 10%;
 
         .profile-res-section-1 {
+            overflow: hidden;
             height: 35%;
             display: flex;
             flex-wrap: wrap;
@@ -36,20 +37,14 @@
             box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 
             .enso-container {
-                width: 14rem;
-                height: 14rem;
-            }
-            .speech-bubble {
-                width: 40%;
-                height: 14rem;
-                span {
-                    font-size: 1.1rem;
-                }
+                width: 18rem;
+                height: 18rem;
+                transform: translate(-20%, -1rem);
             }
 
             .profile-skills {
-                height: 14rem;
-                width: 30%;
+                height: 28rem;
+                width: 60%;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
@@ -57,15 +52,14 @@
 
                 h4 {
                     color: rgb(39, 93, 194);
-                    font-size: 1.5rem;
-                    text-decoration: underline;
+                    font-size: 3rem;
                 }
 
                 .profile-icon-zone {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-evenly;
-                    row-gap: 1rem;
+                    row-gap: 2.5rem;
 
                     .icon-header {
                         width: 25%;
@@ -81,7 +75,7 @@
             flex-wrap: wrap;
             padding: 1rem;
             justify-content: space-evenly;
-            height: 70%;
+            height: 65%;
             background-image: linear-gradient(to right, rgba(4, 89, 110, 0.8), rgba(39, 93, 194, 0.76));
             border-bottom-left-radius: 1rem;
             border-bottom-right-radius: 1rem;
@@ -105,6 +99,9 @@
 
         .profile-about-me {
             @include section2-inners();
+            p {
+                text-indent: 10%;
+            }
         }
 
         .profile-work {
@@ -150,9 +147,11 @@
         .profile-res-section-2 {
             height: fit-content;
         }
-
+        h4 {
+            font-size: 2rem;
+        }
         .profile-skills {
-            height: 10rem;
+            height: 15rem;
             width: 90%;
             font-size: 0.1rem;
         }
@@ -162,7 +161,7 @@
             row-gap: 0.3rem;
 
             .icon-header {
-                height: 2.7rem;
+                height: 4rem;
             }
         }
         .profile-about-me {
@@ -173,17 +172,11 @@
             @include lowerHeaders();
         }
 
-        .speech-bubble {
-            width: 65%;
-            height: 10rem;
-            span {
-                font-size: 0.8em;
-            }
-        }
-
         .enso-container {
-            width: 7rem;
-            height: 7rem;
+            width: 11rem;
+            height: 11rem;
+            transform: translateX(1rem);
+            margin-bottom: 5rem;
         }
     }
 }
