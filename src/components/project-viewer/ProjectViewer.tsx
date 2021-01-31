@@ -1,7 +1,26 @@
 import React, { useState } from 'react';
 import './ProjectViewer.scss';
 import ProjectCard from '../project-card/ProjectCard';
-const ProjectViewer: React.FC = function () {
+import projects from './projects';
+import { connect, ConnectedProps } from 'react-redux';
+interface Project {
+    title: string;
+    videoUrl: string;
+    imageUrl: string;
+    id: number;
+}
+interface RootState {
+    project: {
+        currentProject: Project | null;
+    };
+}
+const msp = ({ project }: RootState) => ({
+    currentProject: project.currentProject,
+});
+const connector = connect(msp);
+type rProps = ConnectedProps<typeof connector>;
+
+const ProjectViewer: React.FC<rProps> = function ({ currentProject }) {
     const [selectedProject] = useState(null);
     interface Project {
         title: string;
@@ -9,48 +28,19 @@ const ProjectViewer: React.FC = function () {
         imageUrl: string;
         id: number;
     }
-    const projects: Array<Project> = [
-        {
-            title: 'Temp Title',
-            videoUrl: 'null',
-            imageUrl: 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg',
-            id: 1,
-        },
-        {
-            title: 'Temp Title',
-            videoUrl: 'null',
-            imageUrl: 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg',
-            id: 2,
-        },
-        {
-            title: 'Temp Title',
-            videoUrl: 'null',
-            imageUrl: 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg',
-            id: 3,
-        },
-        {
-            title: 'Temp Title',
-            videoUrl: 'null',
-            imageUrl: 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg',
-            id: 4,
-        },
-        {
-            title: 'Temp Title',
-            videoUrl: 'null',
-            imageUrl: 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg',
-            id: 5,
-        },
-    ];
 
     const renderScrollCard = (projects: Array<Project>) => {
         return projects.map((project) => <ProjectCard key={project.id} {...project} />);
     };
 
     return (
-        <div className="project-viewer">
+        <div className={`project-viewer ${currentProject ? 'project-dimmed' : null}`}>
             <h1>Projects:</h1>
             <div className="project-card-zone">{!selectedProject ? renderScrollCard(projects) : null}</div>
+            <div className="project-display-card" style={{ display: currentProject ? 'block' : 'none' }}>
+                <div>sssssss</div>
+            </div>
         </div>
     );
 };
-export default ProjectViewer;
+export default connector(ProjectViewer);

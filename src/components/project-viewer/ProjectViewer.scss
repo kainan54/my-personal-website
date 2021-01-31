@@ -4,10 +4,12 @@
     height: 100%;
     width: 100%;
     text-align: center;
+    align-items: center;
     background-image: linear-gradient(to right, rgba(4, 89, 110, 0.8), rgba(39, 93, 194, 0.76));
     padding: 2.3rem;
     h1 {
         font-size: 5rem;
+        width: 100%;
         font-family: 'Exo', sans-serif;
         text-decoration: underline;
         letter-spacing: 0.5rem;
@@ -26,5 +28,32 @@
             height: 27rem;
             width: 30rem;
         }
+    }
+
+    .project-display-card {
+        background-color: white;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        height: 90%;
+        width: 50%;
+        position: absolute;
+        top: 5%;
+        z-index: 3;
+    }
+}
+.project-dimmed {
+    transition-duration: 0.8s;
+    opacity: 0.5;
+    .project-display-card {
+        opacity: 1;
+        animation: appear;
+        animation-duration: 1s;
+    }
+}
+@keyframes appear {
+    0% {
+        transform: translateY(10rem);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

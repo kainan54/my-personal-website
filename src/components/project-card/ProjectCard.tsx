@@ -1,14 +1,33 @@
 import React, { useState } from 'react';
+import { connect, ConnectedProps } from 'react-redux';
+import { UPDATE_PROJECT_VIEW } from '../../redux/project/projectActions';
 import ArrowButton from '../arrow-button/ArrowButton';
 import './ProjectCard.scss';
 
-interface Props {
+interface Props extends rProps {
     title: string;
     videoUrl: string;
     imageUrl: string;
     id: number;
 }
-const ProjectCard: React.FC<Props> = function ({ title, videoUrl, imageUrl, id }: Props) {
+interface Project {
+    title: string;
+    videoUrl: string;
+    imageUrl: string;
+    id: number;
+}
+
+interface Action {
+    type: string;
+    payload: Project | null;
+}
+const mdp = (dispatch: (action: Action) => void) => ({
+    UPDATE_PROJECT_VIEW: (project: Project) => dispatch(UPDATE_PROJECT_VIEW(project)),
+});
+const connector = connect(null, mdp);
+type rProps = ConnectedProps<typeof connector>;
+
+const ProjectCard: React.FC<Props> = function ({ title, videoUrl, imageUrl, id, UPDATE_PROJECT_VIEW }: Props) {
     const [buttonVisibility, setButtonVisibility] = useState(false);
     const [zoomTrigger, setZoomTrigger] = useState('');
     return (
@@ -24,9 +43,13 @@ const ProjectCard: React.FC<Props> = function ({ title, videoUrl, imageUrl, id }
                 onMouseLeave={() => setZoomTrigger('zoomTransformNormal')}
                 style={{ backgroundImage: `url(${imageUrl})` }}
             ></div>
-            {buttonVisibility ? <ArrowButton>More Details</ArrowButton> : null}
+            {buttonVisibility ? (
+                <ArrowButton clickFn={() => UPDATE_PROJECT_VIEW({ title, videoUrl, imageUrl, id })}>
+                    More Details
+                </ArrowButton>
+            ) : null}
         </div>
     );
 };
 
-export default ProjectCard;
+export default connector(ProjectCard);
