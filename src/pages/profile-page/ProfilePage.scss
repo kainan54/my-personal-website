@@ -4,7 +4,199 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border: red 2px solid;
-    // position: absolute;
+
+    .profile-bg-top {
+        height: 50%;
+        width: 100%;
+        background-image: linear-gradient(to right, rgba(4, 89, 110, 0.8), rgba(39, 93, 194, 0.76));
+    }
+
+    .profile-bg-bottom {
+        height: 50%;
+        width: 100%;
+        background-color: white;
+    }
+
+    .profile-resume-container {
+        height: 80%;
+        width: 80%;
+        border-radius: 1rem;
+        background-color: #f5f5f5;
+        position: absolute;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        top: 10%;
+
+        .profile-res-section-1 {
+            height: 35%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem;
+            justify-content: center;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+
+            .enso-container {
+                width: 14rem;
+                height: 14rem;
+            }
+            .speech-bubble {
+                width: 40%;
+                height: 14rem;
+                span {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .profile-skills {
+                height: 14rem;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                border-radius: 1%;
+
+                h4 {
+                    color: rgb(39, 93, 194);
+                    font-size: 1.5rem;
+                    text-decoration: underline;
+                }
+
+                .profile-icon-zone {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    row-gap: 1rem;
+
+                    .icon-header {
+                        width: 25%;
+                        height: 4.2rem;
+                    }
+                }
+            }
+        }
+
+        .profile-res-section-2 {
+            overflow: scroll;
+            overflow-x: hidden;
+            &::-webkit-scrollbar {
+                width: 1em;
+            }
+
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                border-radius: 1rem;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: darkgrey;
+                outline: 1px solid slategrey;
+            }
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem;
+            justify-content: space-evenly;
+            height: 70%;
+            background-image: linear-gradient(to right, rgba(4, 89, 110, 0.8), rgba(39, 93, 194, 0.76));
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            h2 {
+                text-decoration: underline;
+            }
+        }
+
+        @mixin section2-inners {
+            font-family: 'Exo', sans-serif;
+            color: white;
+            font-size: 1.3rem;
+            width: 40%;
+            height: fit-content;
+            h2,
+            h3,
+            ul {
+                padding-bottom: 0.6rem;
+            }
+        }
+
+        .profile-about-me {
+            @include section2-inners();
+        }
+
+        .profile-work {
+            @include section2-inners();
+        }
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    @mixin lowerHeaders {
+        font-size: 1rem;
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+    body {
+        overflow: scroll;
+    }
+    #root {
+        .profile-resume-container {
+            height: fit-content;
+            width: 100%;
+            top: 0rem;
+            padding-top: 4.5rem;
+        }
+        html {
+            font-size: 37%;
+            overflow: scroll;
+        }
+
+        .profile-res-section-1 {
+            width: 100%;
+            height: 35%;
+            row-gap: 1rem;
+            padding: 0.3rem;
+        }
+        .profile-res-section-2 {
+            height: fit-content;
+        }
+
+        .profile-skills {
+            height: 10rem;
+            width: 90%;
+            font-size: 0.1rem;
+        }
+        .profile-icon-zone {
+            height: 100%;
+            width: 100%;
+            row-gap: 0.3rem;
+
+            .icon-header {
+                height: 2.7rem;
+            }
+        }
+        .profile-about-me {
+            @include lowerHeaders();
+        }
+
+        .profile-work {
+            @include lowerHeaders();
+        }
+
+        .speech-bubble {
+            width: 65%;
+            height: 10rem;
+            span {
+                font-size: 0.8em;
+            }
+        }
+
+        .enso-container {
+            width: 7rem;
+            height: 7rem;
+        }
+    }
 }

@@ -23,7 +23,7 @@ const App: React.FC<IndexProps> = function ({ location }) {
                 childFactory={(child) =>
                     React.cloneElement(child, {
                         classNames: location.state ? location.state.transition : 'default',
-                        timeout: location.state ? location.state.timeout : 1000,
+                        timeout: location.state ? location.state.timeout : 0,
                     })
                 }
             >

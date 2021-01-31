@@ -1,22 +1,35 @@
 .arrow-btn {
     height: 8rem;
     width: 20rem;
-    border: white 2px solid;
-    display: inline-block;
-    margin: 0 10rem;
     display: flex;
-    position: relative;
-    justify-content: center;
     align-items: center;
-    font-size: 3rem;
-    transition-duration: 3s;
-    color: white;
-    font-family: 'Exo', sans-serif;
+    justify-content: center;
+
+    .arrow-btn-bg {
+        height: 100%;
+        width: 100%;
+        border: white 2px solid;
+        //display: inline-block;
+        font-size: 3rem;
+        transition-duration: 0.8s;
+        color: white;
+        font-family: 'Exo', sans-serif;
+        &:hover {
+            transition-duration: 0.5;
+            transform: scaleX(1.25);
+            background-color: white;
+            z-index: 2;
+            opacity: 0.1;
+        }
+    }
 
     &:hover {
         transition-duration: 1.5s;
-        width: 30rem;
         color: black;
-        background-color: white;
+    }
+    .arrow-text {
+        position: absolute;
+        font-size: 2em;
+        font-family: 'Exo', sans-serif;
     }
 }
