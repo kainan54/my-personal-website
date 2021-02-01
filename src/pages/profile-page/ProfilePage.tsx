@@ -79,7 +79,7 @@ const ProfilePage: React.FC<RouteComponentProps> = function () {
 
                     <div className="profile-work">
                         <h2>Work Experience:</h2>
-                        <p>
+                        <span>
                             <h3>Lounge 247:</h3>
                             <h4>Barback/tender 02/2019 - 03/2020</h4>
                             <ul>
@@ -115,7 +115,7 @@ const ProfilePage: React.FC<RouteComponentProps> = function () {
                                     Maintained visual merchandising and stayed updated on new products and initiatives
                                 </li>
                             </ul>
-                        </p>
+                        </span>
                     </div>
                 </div>
             </div>

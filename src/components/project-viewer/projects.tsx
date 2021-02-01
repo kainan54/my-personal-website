@@ -13,6 +13,8 @@ import flappyDemonPrev from '../../assets/flappy-demon-prev.png';
 import phaserLogo from '../../assets/phaser-logo.png';
 import scssLogo from '../../assets/scss-logo.png';
 import personalSitePrev from '../../assets/personal-site-prev.png';
+import personalSiteVid from '../../assets/personal-website-video.mp4';
+import tsLogo from '../../assets/ts-logo.png';
 interface Project {
     title: string;
     videoUrl: string;
@@ -90,19 +92,19 @@ const projects: Array<Project> = [
 
     {
         title: 'This Website',
-        videoUrl: '',
+        videoUrl: personalSiteVid,
         imageUrl: personalSitePrev,
         id: 4,
-        githubPath: 'https://github.com/kainan54/personal-website-wip',
+        githubPath: 'https://github.com/kainan54/my-personal-website',
         descrip:
-            'ARt App is a web app that enables users to share images and view them in 3D and AR.  Users can also interact through likes, comments, and followers.',
+            'My online resume/portfolio and a fun study project help improve my CSS and TypeScript skills. I got to play around with using Scss, using animations, typing with react-dom + redux, and building reusable components.',
         features: [
-            'Utilized JSON Web Tokens and Bcrypt Gem for user authorization from front to backend',
-            'Backend Models enabled users to interact through, photo uploads, likes, and following/followers',
-            'Applied Three.Js Library to make a 3D viewer that users could apply to uploaded images',
+            'Used Scss + React to create responsive/animated web elements',
+            'Applied font scaling + media queries to make website adapt to mobile',
+            'created reusable components to use throughout the website',
         ],
         icons: [
-            { title: 'JavaScript', icon: jsLogo },
+            { title: 'TypeScript', icon: tsLogo },
             { title: 'React', icon: reactLogo },
             { title: 'Redux', icon: reduxLogo },
             { title: 'Scss', icon: scssLogo },
