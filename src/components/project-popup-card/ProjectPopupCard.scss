@@ -71,12 +71,14 @@
         }
 
         .project-icon-zone {
+            height: 50px;
+            width: 100%;
             display: flex;
             justify-content: space-evenly;
-            height: fit-content;
             .icon-header {
                 height: 5rem;
                 width: 5rem;
+                padding: 5px;
                 h1 {
                     display: none;
                 }
