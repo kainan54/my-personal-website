@@ -72,9 +72,8 @@
 
         .project-icon-zone {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-evenly;
-            height: 5.3rem;
+            height: fit-content;
             .icon-header {
                 height: 5rem;
                 width: 5rem;
