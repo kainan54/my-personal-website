@@ -73,9 +73,8 @@
         .project-icon-zone {
             height: 50px;
             width: 100%;
-            display: flex;
-            justify-content: space-evenly;
             .icon-header {
+                display: inline-block;
                 height: 5rem;
                 width: 5rem;
                 padding: 5px;
