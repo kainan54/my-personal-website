@@ -72,7 +72,6 @@
 
         .project-icon-zone {
             display: flex;
-            flex-direction: left;
             flex-wrap: wrap;
             justify-content: center;
             .icon-header {
@@ -115,9 +114,9 @@
             width: 100%;
 
             .project-content {
-                height: fit-content;
+                height: auto;
                 .project-icon-zone {
-                    height: 10rem;
+                    height: 20vh;
                 }
                 .project-descrip {
                     height: fit-content;
