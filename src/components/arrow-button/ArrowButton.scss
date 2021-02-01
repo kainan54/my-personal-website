@@ -4,17 +4,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    cursor: pointer;
     .arrow-btn-bg {
         height: 100%;
         width: 100%;
         border: white 2px solid;
-        //display: inline-block;
         font-size: 3rem;
         transition-duration: 0.8s;
         color: white;
         font-family: 'Exo', sans-serif;
-        cursor: pointer;
         &:hover {
             transition-duration: 0.5;
             transform: scaleX(1.25);
@@ -27,7 +25,6 @@
     &:hover {
         transition-duration: 1.5s;
         color: black;
-        cursor: pointer;
     }
     .arrow-text {
         position: absolute;
