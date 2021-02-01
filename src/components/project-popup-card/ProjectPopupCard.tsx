@@ -4,11 +4,17 @@ import { connect, ConnectedProps } from 'react-redux';
 import { UPDATE_PROJECT_VIEW } from '../../redux/project/projectActions';
 import IconHeader from '../icon-w-header/IconHeader';
 import tempIcon from '../../assets/js-logo.png';
+import SocialIcon from '../social-icon/SocialIcon';
+import githublogo from '../../assets/git-hub-logo.png';
 interface Project {
     title: string;
     videoUrl: string;
     imageUrl: string;
     id: number;
+    icons: Array<{ title: string; icon: string }>;
+    descrip: string;
+    features: Array<string>;
+    githubPath: string;
 }
 interface Action {
     type: string;
@@ -28,6 +34,7 @@ interface Props extends rProps {
     icons: Array<{ title: string; icon: string }>;
     descrip: string;
     features: Array<string>;
+    githubPath: string;
 }
 const ProjectPopupCard: React.FC<Props> = function ({
     title,
@@ -37,6 +44,7 @@ const ProjectPopupCard: React.FC<Props> = function ({
     icons,
     descrip,
     features,
+    githubPath,
     UPDATE_PROJECT_VIEW,
 }: Props) {
     const renderIcons = () => {
@@ -58,6 +66,8 @@ const ProjectPopupCard: React.FC<Props> = function ({
                 <div className="project-features">
                     <ul>{renderFeatures()}</ul>
                 </div>
+                <span>Click to View On Github</span>
+                <SocialIcon imageUrl={githublogo} linkUrl={githubPath} />
             </div>
             <div className="project-close-btn" onClick={() => UPDATE_PROJECT_VIEW(null)}>
                 <div className="project-x1" />

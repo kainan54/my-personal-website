@@ -12,6 +12,7 @@ interface Props extends rProps {
     icons: Array<{ title: string; icon: string }>;
     descrip: string;
     features: Array<string>;
+    githubPath: string;
 }
 interface Project {
     title: string;
@@ -21,6 +22,7 @@ interface Project {
     icons: Array<{ title: string; icon: string }>;
     descrip: string;
     features: Array<string>;
+    githubPath: string;
 }
 
 interface Action {
@@ -41,6 +43,7 @@ const ProjectCard: React.FC<Props> = function ({
     icons,
     descrip,
     features,
+    githubPath,
     UPDATE_PROJECT_VIEW,
 }: Props) {
     const [buttonVisibility, setButtonVisibility] = useState(false);
@@ -60,7 +63,9 @@ const ProjectCard: React.FC<Props> = function ({
             ></div>
             {buttonVisibility ? (
                 <ArrowButton
-                    clickFn={() => UPDATE_PROJECT_VIEW({ title, videoUrl, imageUrl, id, icons, descrip, features })}
+                    clickFn={() =>
+                        UPDATE_PROJECT_VIEW({ title, videoUrl, imageUrl, id, icons, descrip, features, githubPath })
+                    }
                 >
                     More Details
                 </ArrowButton>

@@ -6,6 +6,7 @@ interface Project {
     icons: Array<{ title: string; icon: string }>;
     descrip: string;
     features: Array<string>;
+    githubPath: string;
 }
 export const UPDATE_PROJECT_VIEW = function (project: Project | null): { type: string; payload: Project | null } {
     return {

@@ -20,7 +20,7 @@ const HomePage: React.FC = function () {
                     code
                 </span>
                 <div className="home-nav-btns">
-                    <ArrowButton path="/me" animState={{ transition: 'slide-left', timeout: 1000 }}>
+                    <ArrowButton path="/about" animState={{ transition: 'slide-left', timeout: 1000 }}>
                         About me
                     </ArrowButton>
                     <ArrowButton path="/projects" animState={{ transition: 'slide-right', timeout: 1000 }}>
@@ -30,10 +30,14 @@ const HomePage: React.FC = function () {
             </div>
 
             <div className="social-zone">
-                <SocialIcon imageUrl={gmailLogo} linkUrl="temp" extraPadding />
-                <SocialIcon imageUrl={gitHubIcon} linkUrl="temp" />
-                <SocialIcon imageUrl={linkedinIcon} linkUrl="temp" extraPadding />
-                <SocialIcon imageUrl={mediumLogo} linkUrl="temp" />
+                <SocialIcon imageUrl={gmailLogo} linkUrl="mailto:kaindoneson@gmail.com" extraPadding />
+                <SocialIcon imageUrl={gitHubIcon} linkUrl="https://github.com/kainan54" />
+                <SocialIcon
+                    imageUrl={linkedinIcon}
+                    linkUrl="https://www.linkedin.com/in/kainan-doneson-43749b1b4/ "
+                    extraPadding
+                />
+                <SocialIcon imageUrl={mediumLogo} linkUrl="https://kaindoneson.medium.com/" />
             </div>
         </div>
     );

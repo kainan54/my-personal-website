@@ -12,6 +12,7 @@ interface Project {
     icons: Array<{ title: string; icon: string }>;
     descrip: string;
     features: Array<string>;
+    githubPath: string;
 }
 interface RootState {
     project: {

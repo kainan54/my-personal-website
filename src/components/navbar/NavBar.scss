@@ -3,7 +3,7 @@
     width: 20rem;
     background-image: linear-gradient(to right bottom, rgb(22, 20, 20), rgb(19, 17, 53));
     position: absolute;
-    z-index: 2;
+    z-index: 6;
     top: 0rem;
     border-radius: 0.5rem;
     display: flex;
@@ -21,25 +21,63 @@
         justify-content: space-evenly;
         align-items: center;
         padding: 1rem;
-
         &:hover {
-            .nav-line {
-                animation-name: lineAnimHover;
-                animation-duration: 3s;
-                animation-iteration-count: infinite;
-            }
+            cursor: pointer;
         }
 
         .nav-line {
             background-color: white;
             height: 0.15rem;
             width: 1.8rem;
+            transition-duration: 1s;
         }
     }
 
     .nav-header {
         width: 60%;
     }
+    .nav-menu {
+        border-radius: 0.2rem;
+        position: absolute;
+        top: 4.4rem;
+        width: 20rem;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(12, 29, 53, 0.664);
+        .nav-menu-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.2rem;
+            font-size: 1.9rem;
+            border: 0.7px white solid;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            &:hover {
+                transition-duration: 100ms;
+                opacity: 0.6;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.nav-x-hidden {
+    display: none;
+}
+.nav-x1 {
+    transition-duration: 1s;
+    transform: rotate(45deg);
+    position: absolute;
+}
+.nav-x2 {
+    transition-duration: 1s;
+    transform: rotate(135deg);
+    position: absolute;
 }
 
 @keyframes moveInLeft {
