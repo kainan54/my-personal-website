@@ -113,6 +113,16 @@
             top: 4.5rem;
             height: 93%;
             width: 100%;
+
+            .project-content {
+                height: fit-content;
+                .project-icon-zone {
+                    height: 10rem;
+                }
+                .project-descrip {
+                    height: fit-content;
+                }
+            }
         }
     }
 }
