@@ -88,10 +88,6 @@
             font-size: 1.3rem;
         }
         .project-features {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             font-size: 1.3rem;
             padding-left: 3rem;
             text-align: left;
@@ -110,18 +106,8 @@
     #root {
         .project-display-card {
             top: 4.5rem;
-            height: 93%;
+            height: 90%;
             width: 100%;
-
-            .project-content {
-                height: auto;
-                .project-icon-zone {
-                    height: 20vh;
-                }
-                .project-descrip {
-                    height: fit-content;
-                }
-            }
         }
     }
 }
