@@ -39,8 +39,6 @@ interface Props extends rProps {
 const ProjectPopupCard: React.FC<Props> = function ({
     title,
     videoUrl,
-    imageUrl,
-    id,
     icons,
     descrip,
     features,
