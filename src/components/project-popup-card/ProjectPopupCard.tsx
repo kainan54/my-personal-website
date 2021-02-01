@@ -3,7 +3,6 @@ import './ProjectPopupCard.scss';
 import { connect, ConnectedProps } from 'react-redux';
 import { UPDATE_PROJECT_VIEW } from '../../redux/project/projectActions';
 import IconHeader from '../icon-w-header/IconHeader';
-import tempIcon from '../../assets/js-logo.png';
 import SocialIcon from '../social-icon/SocialIcon';
 import githublogo from '../../assets/git-hub-logo.png';
 interface Project {
