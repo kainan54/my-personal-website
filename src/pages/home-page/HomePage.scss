@@ -98,13 +98,11 @@
 @media screen and (max-width: 920px) {
     #root {
         .content {
-            height: fit-content;
-            .expanding-image-container {
-                height: 100%;
-            }
+            height: 84vh;
+
             .home-header {
                 font-size: 3rem;
-                padding: 10%;
+                padding: 14%;
             }
 
             .home-sub-header {
