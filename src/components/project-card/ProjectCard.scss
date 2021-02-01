@@ -19,6 +19,8 @@
         top: 5%;
         font-size: 3rem;
         font-family: 'Exo', sans-serif;
+        color: orange;
+        font-weight: bolder;
     }
     .arrow-btn {
         position: absolute;
@@ -31,7 +33,6 @@
     .project-close-btn {
         width: 25px;
         height: 25px;
-        background-color: red;
         border: 1px solid black;
     }
 }

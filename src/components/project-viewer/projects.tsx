@@ -12,7 +12,7 @@ import mod5Prev from '../../assets/mod5-prev.png';
 import flappyDemonPrev from '../../assets/flappy-demon-prev.png';
 import phaserLogo from '../../assets/phaser-logo.png';
 import scssLogo from '../../assets/scss-logo.png';
-import personalSitePrev from '../../assets/personal-site.prev.png';
+import personalSitePrev from '../../assets/personal-site-prev.png';
 interface Project {
     title: string;
     videoUrl: string;
@@ -85,6 +85,27 @@ const projects: Array<Project> = [
             { title: 'Redux', icon: reduxLogo },
             { title: 'Ruby', icon: rubyLogo },
             { title: 'Rails', icon: railsLogo },
+        ],
+    },
+
+    {
+        title: 'This Website',
+        videoUrl: '',
+        imageUrl: personalSitePrev,
+        id: 4,
+        githubPath: 'https://github.com/kainan54/personal-website-wip',
+        descrip:
+            'ARt App is a web app that enables users to share images and view them in 3D and AR.  Users can also interact through likes, comments, and followers.',
+        features: [
+            'Utilized JSON Web Tokens and Bcrypt Gem for user authorization from front to backend',
+            'Backend Models enabled users to interact through, photo uploads, likes, and following/followers',
+            'Applied Three.Js Library to make a 3D viewer that users could apply to uploaded images',
+        ],
+        icons: [
+            { title: 'JavaScript', icon: jsLogo },
+            { title: 'React', icon: reactLogo },
+            { title: 'Redux', icon: reduxLogo },
+            { title: 'Scss', icon: scssLogo },
         ],
     },
 ].reverse();
