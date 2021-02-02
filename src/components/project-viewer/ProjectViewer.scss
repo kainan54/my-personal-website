@@ -46,3 +46,15 @@
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width: 920px) {
+    #root {
+        .project-header {
+            width: 100%;
+        }
+
+        .project-card-zone {
+            width: 100%;
+        }
+    }
+}

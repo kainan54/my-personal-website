@@ -97,7 +97,7 @@ const ProfilePage: React.FC<RouteComponentProps> = function () {
                                     inventory organized and accessible
                                 </li>
                                 <li>Received product shipments and cataloged them for easy retrieval</li>
-                                <li>Documented, labeled, and shippped out product returns/repairs to the main depot</li>
+                                <li>Documented, labeled, and shipped out product returns/repairs to the main depot</li>
                             </ul>
                             <h4>Retail Specialist (01/2018 - 11/2018)</h4>
                             <ul>

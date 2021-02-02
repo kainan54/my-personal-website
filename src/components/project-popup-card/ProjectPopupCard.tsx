@@ -4,7 +4,7 @@ import { connect, ConnectedProps } from 'react-redux';
 import { UPDATE_PROJECT_VIEW } from '../../redux/project/projectActions';
 import IconHeader from '../icon-w-header/IconHeader';
 import SocialIcon from '../social-icon/SocialIcon';
-import githublogo from '../../assets/git-hub-logo.png';
+import githublogo from '../../assets/white-git-hub.png';
 interface Project {
     title: string;
     videoUrl: string;
