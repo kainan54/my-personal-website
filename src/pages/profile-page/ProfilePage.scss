@@ -60,11 +60,11 @@
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-evenly;
-                    row-gap: 2.5rem;
 
                     .icon-header {
                         width: 25%;
                         height: 4.2rem;
+                        margin-bottom: 2.5rem;
                     }
                 }
             }
