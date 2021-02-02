@@ -122,6 +122,9 @@
         h3 {
             font-size: 1.5rem;
         }
+        h4 {
+            font-size: 1.4rem;
+        }
     }
     body {
         @include nicerOverFlow();
@@ -172,9 +175,6 @@
         }
         .profile-res-section-2 {
             height: fit-content;
-        }
-        h4 {
-            font-size: 2rem;
         }
 
         .profile-about-me {
