@@ -31,8 +31,8 @@
             overflow: hidden;
             height: fit-content;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+
+            justify-content: center;
 
             padding: 3rem;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
@@ -54,6 +54,7 @@
                     color: rgb(39, 93, 194);
                     font-size: 3rem;
                     margin-top: 3rem;
+                    margin-bottom: 1rem;
                 }
 
                 .profile-icon-zone {
@@ -143,10 +144,12 @@
         }
 
         .profile-res-section-1 {
+            align-items: center;
             width: 100%;
             height: fit-content;
             row-gap: 1rem;
             padding: 0.3rem;
+            flex-direction: column;
             .profile-skills {
                 height: fit-content;
                 width: 95%;
