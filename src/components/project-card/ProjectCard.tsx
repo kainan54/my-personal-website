@@ -49,27 +49,29 @@ const ProjectCard: React.FC<Props> = function ({
     const [buttonVisibility, setButtonVisibility] = useState(false);
     const [zoomTrigger, setZoomTrigger] = useState('');
     return (
-        <div
-            className="project-card"
-            key={id}
-            onMouseOver={() => setButtonVisibility(true)}
-            onMouseLeave={() => setButtonVisibility(false)}
-        >
+        <div className="pc-container">
             <div
-                className={`project-card-img ${zoomTrigger}`}
-                onMouseOver={() => setZoomTrigger('zoomTransformPlus')}
-                onMouseLeave={() => setZoomTrigger('zoomTransformNormal')}
-                style={{ backgroundImage: `url(${imageUrl})` }}
-            ></div>
-            {buttonVisibility ? (
-                <ArrowButton
-                    clickFn={() =>
-                        UPDATE_PROJECT_VIEW({ title, videoUrl, imageUrl, id, icons, descrip, features, githubPath })
-                    }
-                >
-                    More Details
-                </ArrowButton>
-            ) : null}
+                className="project-card"
+                key={id}
+                onMouseOver={() => setButtonVisibility(true)}
+                onMouseLeave={() => setButtonVisibility(false)}
+            >
+                <div
+                    className={`project-card-img ${zoomTrigger}`}
+                    onMouseOver={() => setZoomTrigger('zoomTransformPlus')}
+                    onMouseLeave={() => setZoomTrigger('zoomTransformNormal')}
+                    style={{ backgroundImage: `url(${imageUrl})` }}
+                ></div>
+                {buttonVisibility ? (
+                    <ArrowButton
+                        clickFn={() =>
+                            UPDATE_PROJECT_VIEW({ title, videoUrl, imageUrl, id, icons, descrip, features, githubPath })
+                        }
+                    >
+                        More Details
+                    </ArrowButton>
+                ) : null}
+            </div>
             <p className="project-card-title">{title}</p>
         </div>
     );

@@ -55,11 +55,11 @@ const ProjectPopupCard: React.FC<Props> = function ({
             <h2>{title}</h2>
             <video src={videoUrl} controls />
             <div className="project-content">
-                <h3>Built With:</h3>
+                <h3>Built With</h3>
                 <div className="project-icon-zone">{renderIcons()}</div>
-                <h3>Brief Summary:</h3>
+                <h3>Brief Summary</h3>
                 <p className="project-descrip">{descrip}</p>
-                <h3>Key Features:</h3>
+                <h3>Key Features</h3>
                 <div className="project-features">
                     <ul>{renderFeatures()}</ul>
                 </div>

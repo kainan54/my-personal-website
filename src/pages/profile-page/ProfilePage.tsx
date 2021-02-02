@@ -79,35 +79,33 @@ const ProfilePage: React.FC<RouteComponentProps> = function () {
                     <div className="profile-work">
                         <h2>Work Experience</h2>
                         <span>
-                            <h3>Lounge 247:</h3>
-                            <h4>Barback/tender 02/2019 - 03/2020</h4>
+                            <h3>Lounge 247</h3>
+                            <h4>Barback/tender (02/2019 - 03/2020)</h4>
                             <ul>
                                 <li>Interacted with customers and prepared beverages for high-volume bar patrons</li>
                                 <li>
-                                    Check customers identification to ensure compliance with all beverage regulations
+                                    Checked customers identification to ensure compliance with all beverage regulations
                                 </li>
                                 <li>Maintained bar and storage areas and restocked bar inventory and supplies</li>
                             </ul>
 
-                            <h3>Apple WTC, Manhattan NY:</h3>
-                            <h4>Back of House Specialist 11/2018 - 01/2019:</h4>
+                            <h3>Apple(Word Trade Center)</h3>
+                            <h4>Back of House Specialist (11/2018 - 01/2019)</h4>
                             <ul>
                                 <li>
-                                    Worked alongside team members rotating different BOH tasks to keep things running
-                                    smoothly
+                                    Worked alongside team members rotating different back of house tasks to keep
+                                    inventory organized and accessible
                                 </li>
-                                <li>
-                                    Receiving product shipments and orderly storing them for easy retrieval later on
-                                </li>
-                                <li>Document, label, and ship out product returns/repairs to the main depot</li>
+                                <li>Received product shipments and cataloged them for easy retrieval</li>
+                                <li>Documented, labeled, and shippped out product returns/repairs to the main depot</li>
                             </ul>
-                            <h4>Retail Specialist 01/2018 - 11/2018:</h4>
+                            <h4>Retail Specialist (01/2018 - 11/2018)</h4>
                             <ul>
                                 <li>
                                     Interacted with customers to target technical needs and suggest product solutions
                                 </li>
                                 <li>
-                                    Advised customers and provided guidance and explanations on setting up their new
+                                    Advised customers and provided guidance and assistance on setting up their new
                                     technology
                                 </li>
                                 <li>

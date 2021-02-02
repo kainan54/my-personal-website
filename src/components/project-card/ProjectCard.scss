@@ -1,6 +1,8 @@
 .project-card {
-    height: 30rem;
-    width: 30rem;
+    border-radius: 0.8rem;
+    border: blue 0.6px solid;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -12,15 +14,6 @@
         background-size: cover;
         background-position: center;
         z-index: 1;
-    }
-    .project-card-title {
-        position: absolute;
-        z-index: 3;
-        top: 5%;
-        font-size: 3rem;
-        font-family: 'Exo', sans-serif;
-        color: orange;
-        font-weight: bolder;
     }
     .arrow-btn {
         position: absolute;
@@ -47,4 +40,36 @@
     transform: scale(1);
     transition-duration: 5s;
     transition: transform 6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.project-card-title {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    font-size: 3rem;
+    color: black;
+    font-weight: bolder;
+}
+.pc-container {
+    height: 45rem;
+    width: 45rem;
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    .project-card-title {
+        top: -4rem;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    #root {
+        .pc-container {
+            height: 20rem;
+        }
+        .project-header {
+            font-size: 6rem;
+            margin-top: 4.3rem;
+        }
+    }
 }

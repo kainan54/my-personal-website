@@ -33,7 +33,7 @@ const projects: Array<Project> = [
         id: 1,
         githubPath: 'https://github.com/kainan54/Mod3-VideoGame-Project',
         descrip:
-            'Loot based web video game. Players are able to collect items/power-ups by defeating enemies or by purchasing them from the item shop. Users are ranked based on the amount of currency gained from selling items. ',
+            'Flappy Demon is a loot-based web game where players are able to collect items/power-ups by defeating enemies or by purchasing them from the item shop. Users are ranked based on the amount of currency gained from selling items.',
         features: [
             'Used Phaser3/Vanilla-JS for frontend and Rails API/Ruby for backend',
             'Meshed dom elements to respond to Phaser3 game logic',
@@ -53,11 +53,11 @@ const projects: Array<Project> = [
         id: 2,
         githubPath: 'https://github.com/kainan54/Mod4-project-geoTunes',
         descrip:
-            'Geotunes is a web application designed to allow users to create and share custom google map routes with Spotify playlists attached to them.',
+            'Geotunes is a web application designed to allow users to create and share custom Google Maps routes that are linked to Spotify playlists.',
         features: [
-            'Integrated GoogleMaps to enable users to make custom routes on a shared map',
+            'Integrated Google Maps to enable users to make custom routes on a shared map',
             'Applied Spotify React Components to enable users to attach public playlists to custom routes',
-            'Utilized JSON Web Tokens and Bcrypt Gem for user authorization from front to backend',
+            'Utilized JSON Web Tokens and Bcrypt Gem for user authorization from frontend to backend',
         ],
         icons: [
             { title: 'JavaScript', icon: jsLogo },
@@ -74,12 +74,12 @@ const projects: Array<Project> = [
         id: 3,
         githubPath: 'https://github.com/kainan54/Mod5-Project-ARt-App',
         descrip:
-            'ARt App is a web app that enables users to share images and view them in 3D and AR.  Users can also interact through likes, comments, and followers.',
+            'ARt App is a web app that enables users to share images and view them in 3D and AR. Users can also interact through likes, comments, and followers.',
         features: [
-            'Utilized JSON Web Tokens and Bcrypt Gem for user authorization from front to backend',
-            'Backend Models enabled users to interact through, photo uploads, likes, and following/followers',
-            'Applied Three.Js Library to make a 3D viewer that users could apply to uploaded images',
-            'Incorporated ARJS to make a view layer where users can view uploaded images with a hiro marker/camera',
+            'Utilized JSON Web Tokens and Bcrypt Gem for user authorization from frontend to backend',
+            'Enabled users to interact through, photo uploads, likes, and following each other using rails models',
+            'Leveraged Three.js library to make a 3D viewer that users could apply to uploaded images',
+            'Incorporated AR.js to make a view layer where users can view their images with a hiro marker and webcam',
         ],
         icons: [
             { title: 'JavaScript', icon: jsLogo },
@@ -96,11 +96,11 @@ const projects: Array<Project> = [
         id: 4,
         githubPath: 'https://github.com/kainan54/Mod5-Project-ARt-App',
         descrip:
-            'My online resume/portfolio and a fun study project help improve my CSS and TypeScript skills. I got to play around with using Scss, using animations, typing with react-dom + redux, and building reusable components.',
+            'My online resume/portfolio and a fun study project to help improve my CSS and TypeScript skills. I got to play around with using Scss, animations, typing with react-dom + redux, and building reusable components.',
         features: [
-            'Used Scss + React to create responsive/animated web elements',
-            'Applied font scaling + media queries to make website adapt to mobile',
-            'created reusable components to use throughout the website',
+            'Used Scss + React to create responsive and animated web elements',
+            'Applied font scaling and media queries to make website mobile friendly',
+            'Created reusable components to use throughout the website',
         ],
         icons: [
             { title: 'TypeScript', icon: tsLogo },
