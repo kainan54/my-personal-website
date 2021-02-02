@@ -21,7 +21,7 @@ const ProfilePage: React.FC<RouteComponentProps> = function () {
                 <div className="profile-res-section-1">
                     <EnsoPortrait img={ProPic}>Kainan Doneson</EnsoPortrait>
                     <div className="profile-skills">
-                        <h4> Main Programming Skills:</h4>
+                        <h4> Main Programming Skills</h4>
                         <div className="profile-icon-zone">
                             <IconHeader title="JavaScript" icon={jsLogo} />
                             <IconHeader title="TypeScript" icon={tsLogo} />
@@ -41,31 +41,30 @@ const ProfilePage: React.FC<RouteComponentProps> = function () {
                             Hello, my name is Kainan Doneson, and I am an aspiring full stack developer and a graduate
                             of the Flatiron School Bootcamp. I started my coding journey around Christmas in 2019 when
                             my close friend, a Google software developer, gave me the book Eloquent JavaScript by Marijn
-                            Haverbeke. I must admit getting introduced to concepts such as recursion three chapters into
-                            the text/two weeks into learning code was a bit intimidating. However, even more so than the
-                            confusion was the embers of a more profound passion rapidly gaining heat inside me; I had
+                            Haverbeke. I must admit getting introduced to concepts such as recursion only two weeks into
+                            learning how to code was a bit intimidating. However, even more prominent than my initial
+                            confusion were the embers of a more profound passion rapidly gaining heat inside me; I had
                             become hooked.
                         </p>
                         <p>
                             In between pockets of work, I would sift through the chapters absorbing all that I could,
-                            dreaming of the day I could make software development into a career. And then it happened;
-                            the pandemic took the world by storm, shattering our social norms and destroying the
-                            industry I had been working in. It was now or never for me. And so, in the face of tragedy,
-                            face of tragedy, I enrolled in the Flatiron Bootcamp to pursue my dream of being a web
-                            developer.
+                            dreaming of the day I could make software development into a career. And then it
+                            happened—the pandemic took the world by storm, shattering our social norms and destroying
+                            the industry I had been working in. It was now or never for me. And so, in the face of
+                            tragedy, I enrolled in the Flatiron Bootcamp to pursue my dream of being a developer.
                         </p>
-                        <h2>What my past careers have taught me:</h2>
+                        <h2>What my past careers have taught me</h2>
                         <p>
-                            {`Before the pandemic, I've worked primarily in the service industry and retail for the WTC
-                            apple store. I got to work both front and back of the house(full-stack, if you will) during
+                            {`Before the pandemic, I worked primarily in the service industry and retail for the WTC
+                            Apple store. I got to work both front and back of the house (full-stack, if you will) during
                             my time at the apple store, but I don't believe the physical tools translate to programming
                             much. Sadly, box-cutters and cardboard aren't entirely databases; selling iPhones doesn't
                             help develop react components, and I don't believe crafting alcoholic beverages is quite the
                             customer solution your tech companies are after.`}
                         </p>
                         <p>
-                            However, these work experiences allowed me to work amongst diverse teams of both large and
-                            small sizes. The abilities that translate are interpersonal and come from this—working back
+                            However, these work experiences allowed me to work among diverse teams of both small and
+                            large sizes. The abilities that translate are interpersonal and come from this—working back
                             of house in retail taught me how to work through ambiguity. For maximum efficiency, you
                             would need to base your actions based on the current state of operations, cognizant of the
                             present hierarchy of priorities. In contrast, working in sales was more
@@ -78,7 +77,7 @@ const ProfilePage: React.FC<RouteComponentProps> = function () {
                     </div>
 
                     <div className="profile-work">
-                        <h2>Work Experience:</h2>
+                        <h2>Work Experience</h2>
                         <span>
                             <h3>Lounge 247:</h3>
                             <h4>Barback/tender 02/2019 - 03/2020</h4>

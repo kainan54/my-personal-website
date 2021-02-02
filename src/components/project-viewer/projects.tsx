@@ -89,13 +89,12 @@ const projects: Array<Project> = [
             { title: 'Rails', icon: railsLogo },
         ],
     },
-
     {
         title: 'This Website',
         videoUrl: personalSiteVid,
         imageUrl: personalSitePrev,
         id: 4,
-        githubPath: 'https://github.com/kainan54/my-personal-website',
+        githubPath: 'https://github.com/kainan54/Mod5-Project-ARt-App',
         descrip:
             'My online resume/portfolio and a fun study project help improve my CSS and TypeScript skills. I got to play around with using Scss, using animations, typing with react-dom + redux, and building reusable components.',
         features: [

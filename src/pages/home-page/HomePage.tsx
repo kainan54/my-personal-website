@@ -16,8 +16,8 @@ const HomePage: React.FC = function () {
                 <ExpandingImage imageUrl={test} />
                 <h1 className="home-header">Kainan Doneson</h1>
                 <span className="home-sub-header">
-                    Is an aspiring Full Stack Junior Developer from Brooklyn with a passion for learning and developing
-                    code
+                    is an aspiring Full Stack Junior Developer from Brooklyn with a passion for learning and writing
+                    quality code
                 </span>
                 <div className="home-nav-btns">
                     <ArrowButton path="/about" animState={{ transition: 'slide-left', timeout: 1000 }}>
