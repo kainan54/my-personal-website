@@ -64,15 +64,15 @@ const ProfilePage: React.FC<RouteComponentProps> = function () {
                         </p>
                         <p>
                             However, these work experiences allowed me to work among diverse teams of both small and
-                            large sizes. The abilities that translate are interpersonal and come from this—working back
-                            of house in retail taught me how to work through ambiguity. For maximum efficiency, you
-                            would need to base your actions based on the current state of operations, cognizant of the
-                            present hierarchy of priorities. In contrast, working in sales was more
-                            communication-oriented. Solving customer problems requires active listening; I had to seek
-                            to understand rather than retort. Furthermore, Efficiently managing high customer volume
-                            requires the team to cooperate in evenly delegating responsibilities. Lastly, working in
-                            service taught me not to take things personally. Meeting many people with a broad spectrum
-                            of personalities and experiences reminds me to appreciate the vast world around us.
+                            large sizes. What does translate from my past work is interpersonal skills. Working retail
+                            taught me how to work through ambiguity. For maximum efficiency, you base your actions the
+                            current state of operations, cognizant of the present hierarchy of priorities. In contrast,
+                            working in sales was more communication-oriented. Solving customer problems requires active
+                            listening; I had to seek to understand rather than retort. Furthermore, efficiently managing
+                            high customer volume requires the team to cooperate in evenly delegating responsibilities.
+                            Lastly, working in service taught me not to take things personally. Meeting many people with
+                            a broad spectrum of personalities and experiences reminds me to appreciate the vast world
+                            around us.
                         </p>
                     </div>
 
