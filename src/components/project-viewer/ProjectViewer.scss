@@ -11,13 +11,17 @@
     .project-header {
         font-size: 8rem;
         text-decoration: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 80%;
-        height: 20%;
+        height: 25%;
         background-color: #131135;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
         background-image: linear-gradient(to right, rgba(4, 89, 110, 0.8), rgba(39, 93, 194, 0.76)),
             url('../../assets/project-bg.jpg');
         background-size: contain;
+        background-position: center;
     }
     .project-card-zone {
         height: 80%;
@@ -55,6 +59,15 @@
 
         .project-card-zone {
             width: 100%;
+        }
+    }
+}
+@media screen and (max-height: 600px) {
+    #root {
+        .project-page {
+            .project-header {
+                font-size: 4rem;
+            }
         }
     }
 }

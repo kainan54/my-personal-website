@@ -132,3 +132,13 @@
         }
     }
 }
+@media screen and (max-height: 600px) {
+    #root {
+        .content {
+            .home-header {
+                font-size: 3rem;
+                padding: 5%;
+            }
+        }
+    }
+}
