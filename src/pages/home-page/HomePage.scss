@@ -102,7 +102,7 @@
 
             .home-header {
                 font-size: 3rem;
-                padding: 14%;
+                padding: 21%;
             }
 
             .home-sub-header {
@@ -132,12 +132,12 @@
         }
     }
 }
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 400px) {
     #root {
         .content {
             .home-header {
                 font-size: 3rem;
-                padding: 5%;
+                padding: 6.4%;
             }
         }
     }
