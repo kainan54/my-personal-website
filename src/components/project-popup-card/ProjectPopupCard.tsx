@@ -63,8 +63,8 @@ const ProjectPopupCard: React.FC<Props> = function ({
                 <div className="project-features">
                     <ul>{renderFeatures()}</ul>
                 </div>
-                <span>Click to View On Github</span>
                 <SocialIcon imageUrl={githublogo} linkUrl={githubPath} />
+                <span>Click to View On Github</span>
             </div>
             <div className="project-close-btn" onClick={() => UPDATE_PROJECT_VIEW(null)}>
                 <div className="project-x1" />

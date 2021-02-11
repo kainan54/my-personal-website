@@ -62,7 +62,7 @@ const projects: Array<Project> = [
         icons: [
             { title: 'JavaScript', icon: jsLogo },
             { title: 'React', icon: reactLogo },
-            { title: 'GoogleMapsAPI', icon: gmapLogo },
+            { title: 'GoogleAPI', icon: gmapLogo },
             { title: 'Ruby', icon: rubyLogo },
             { title: 'Rails', icon: railsLogo },
         ],

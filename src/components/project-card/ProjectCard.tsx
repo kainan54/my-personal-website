@@ -50,6 +50,7 @@ const ProjectCard: React.FC<Props> = function ({
     const [zoomTrigger, setZoomTrigger] = useState('');
     return (
         <div className="pc-container">
+            <p className="project-card-title">{title}</p>
             <div
                 className="project-card"
                 key={id}
@@ -72,7 +73,6 @@ const ProjectCard: React.FC<Props> = function ({
                     </ArrowButton>
                 ) : null}
             </div>
-            <p className="project-card-title">{title}</p>
         </div>
     );
 };

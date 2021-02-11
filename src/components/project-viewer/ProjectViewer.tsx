@@ -34,7 +34,7 @@ const ProjectViewer: React.FC<rProps> = function ({ currentProject }) {
 
     return (
         <div className={`project-viewer ${currentProject ? 'project-dimmed' : null}`}>
-            <div className="project-header">Projects:</div>
+            <div className="project-header">Projects</div>
             <div className="project-card-zone">{!selectedProject ? renderScrollCard(projects) : null}</div>
             {currentProject ? <ProjectPopupCard {...currentProject} /> : null}
         </div>
