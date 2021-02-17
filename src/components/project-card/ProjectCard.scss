@@ -47,19 +47,17 @@
     transition-duration: 5s;
     transition: transform 6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.project-card-title {
-    z-index: 3;
-    font-size: 3rem;
-    padding-bottom: 0.4rem;
-    color: #116466;
-    font-weight: bolder;
-}
 .pc-container {
     height: 45rem;
     width: 45rem;
     margin: 2.4rem 10rem;
     .project-card-title {
         top: -4rem;
+        z-index: 3;
+        font-size: 3rem;
+        padding-bottom: 0.4rem;
+        color: #116466;
+        font-weight: bolder;
     }
 }
 
@@ -67,7 +65,10 @@
     #root {
         .pc-container {
             height: 20rem;
-            margin: 2.4rem 1rem;
+            margin: 2.4rem;
+            .project-card {
+                margin-left: 1rem;
+            }
         }
         .project-header {
             font-size: 6rem;
