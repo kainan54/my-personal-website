@@ -89,12 +89,12 @@ const ProfilePage: React.FC<RouteComponentProps> = function () {
                                 <li>Maintained bar and storage areas and restocked bar inventory and supplies</li>
                             </ul>
 
-                            <h3>Apple(Word Trade Center)</h3>
+                            <h3>Apple Word Trade Center</h3>
                             <h4>Back of House Specialist (11/2018 - 01/2019)</h4>
                             <ul>
                                 <li>
-                                    Worked alongside team members rotating different back of house tasks to keep
-                                    inventory organized and accessible
+                                    Rotated various back of house tasks with teammates to keep inventory organized and
+                                    accessible
                                 </li>
                                 <li>Received product shipments and cataloged them for easy retrieval</li>
                                 <li>Documented, labeled, and shipped out product returns/repairs to the main depot</li>

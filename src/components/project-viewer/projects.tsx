@@ -33,7 +33,7 @@ const projects: Array<Project> = [
         id: 1,
         githubPath: 'https://github.com/kainan54/Mod3-VideoGame-Project',
         descrip:
-            'Flappy Demon is a loot-based web game where players are able to collect items/power-ups by defeating enemies or by purchasing them from the item shop. Users are ranked based on the amount of currency gained from selling items.',
+            'Flappy Demon is a loot-based web game where players collect items/power-ups by defeating enemies or by purchasing them from the item shop. Users are ranked based on the amount of currency gained from selling items.',
         features: [
             'Used Phaser3/Vanilla-JS for frontend and Rails API/Ruby for backend',
             'Meshed dom elements to respond to Phaser3 game logic',
@@ -53,7 +53,7 @@ const projects: Array<Project> = [
         id: 2,
         githubPath: 'https://github.com/kainan54/Mod4-project-geoTunes',
         descrip:
-            'Geotunes is a web application designed to allow users to create and share custom Google Maps routes that are linked to Spotify playlists.',
+            'Geotunes is a web application designed to allow users to create and share custom Google Maps routes that are linked to Spotify playlists',
         features: [
             'Integrated Google Maps to enable users to make custom routes on a shared map',
             'Applied Spotify React Components to enable users to attach public playlists to custom routes',
@@ -78,7 +78,7 @@ const projects: Array<Project> = [
         features: [
             'Utilized JSON Web Tokens and Bcrypt Gem for user authorization from frontend to backend',
             'Enabled users to interact through, photo uploads, likes, and following each other using rails models',
-            'Leveraged Three.js library to make a 3D viewer that users could apply to uploaded images',
+            'Applied Three.js Library to make a 3D viewer that users could apply to uploaded images',
             'Incorporated AR.js to make a view layer where users can view their images with a hiro marker and webcam',
         ],
         icons: [
