@@ -1,4 +1,5 @@
 .nav-bar {
+    position: relative;
     height: 4.4rem;
     width: 20rem;
     background-color: #181818;
@@ -35,7 +36,9 @@
     }
 
     .nav-header {
-        width: 60%;
+        position: absolute;
+        left: 36%;
+        top: 15%;
     }
     .nav-menu {
         border-radius: 0.8rem;
