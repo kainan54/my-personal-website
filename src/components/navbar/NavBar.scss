@@ -1,99 +1,101 @@
-.nav-bar {
-    position: relative;
-    height: 4.4rem;
-    width: 20rem;
-    background-color: #181818;
-    // background-image: linear-gradient(to right, #116466, rgba(4, 89, 110, 0.363));
+.nav-container {
     position: absolute;
     z-index: 6;
     top: 1rem;
     left: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    animation-name: moveInLeft;
-    animation-duration: 2s;
+    height: 4.4rem;
+    width: 20rem;
+    background-color: #181818;
     border-radius: 0.7rem;
-
-    .nav-icon {
+    .nav-bar {
+        // background-image: linear-gradient(to right, #116466, rgba(4, 89, 110, 0.363));
         height: 100%;
-        width: 25%;
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        padding: 1rem;
-        &:hover {
-            cursor: pointer;
-        }
+        animation-name: moveInLeft;
+        animation-duration: 2s;
 
-        .nav-line {
-            background-color: #d1e8e2;
-            height: 0.15rem;
-            width: 1.8rem;
-            transition-duration: 1s;
-        }
-    }
-
-    .nav-header {
-        position: absolute;
-        left: 36%;
-        top: 15%;
-    }
-    .nav-menu {
-        border-radius: 0.8rem;
-        position: absolute;
-        top: 4.4rem;
-        width: 20rem;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        background-color: #2c3531ab;
-        .nav-menu-item {
+        .nav-icon {
+            height: 100%;
             display: flex;
-            justify-content: center;
+            position: absolute;
+            left: 0.5rem;
+            flex-direction: column;
+            justify-content: space-evenly;
             align-items: center;
-            padding: 1.2rem;
-            font-size: 1.9rem;
-            border: 0.7px #d1e8e2 solid;
-            border-radius: 0.8rem;
-            a {
-                text-decoration: none;
-                color: #d1e8e2;
-            }
-
+            padding: 1rem;
             &:hover {
-                transition-duration: 100ms;
-                opacity: 0.6;
                 cursor: pointer;
             }
+
+            .nav-line {
+                background-color: #d1e8e2;
+                height: 0.15rem;
+                width: 1.8rem;
+                transition-duration: 1s;
+            }
+        }
+
+        .nav-menu {
+            border-radius: 0.8rem;
+            position: absolute;
+            top: 4.4rem;
+            left: 0;
+            width: 20rem;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            background-color: #2c3531ab;
+            .nav-menu-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1.2rem;
+                font-size: 1.9rem;
+                border: 0.7px #d1e8e2 solid;
+                border-radius: 0.8rem;
+                a {
+                    text-decoration: none;
+                    color: #d1e8e2;
+                }
+
+                &:hover {
+                    transition-duration: 100ms;
+                    opacity: 0.6;
+                    cursor: pointer;
+                }
+            }
         }
     }
-}
 
-.nav-x-hidden {
-    display: none;
-}
-.nav-x1 {
-    transition-duration: 1s;
-    transform: rotate(45deg);
-    position: absolute;
-}
-.nav-x2 {
-    transition-duration: 1s;
-    transform: rotate(135deg);
-    position: absolute;
-}
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
+    .nav-x-hidden {
+        display: none;
+    }
+    .nav-x1 {
+        transition-duration: 1s;
+        transform: rotate(45deg);
+        left: 0.5rem;
+        position: absolute;
+    }
+    .nav-x2 {
+        transition-duration: 1s;
+        transform: rotate(135deg);
+        position: absolute;
+        left: 0.5rem;
     }
 
-    100% {
-        opacity: 1;
-        transform: translate(0);
+    @keyframes moveInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
     }
 }
 
@@ -111,11 +113,13 @@
 
 @media screen and (max-width: 920px) {
     #root {
-        .nav-bar {
+        .nav-container {
             top: 0;
             left: 0;
             width: 100%;
             border-radius: 0;
+            border-bottom-left-radius: 0.3rem;
+            border-bottom-right-radius: 0.3rem;
         }
     }
 }

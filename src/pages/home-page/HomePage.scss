@@ -13,35 +13,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     position: relative;
-    .home-header {
-        font-size: 7rem;
-        font-weight: 200;
-        letter-spacing: 1rem;
-        animation-name: header-drop;
-        animation-duration: 1.5s;
-        position: relative;
-        padding-top: 8rem;
-        &::before {
-            content: '';
-            position: absolute;
-            width: 50%;
-            height: 1rem;
-            bottom: 1rem;
-            left: 25%;
-            border-bottom: 0.5rem dashed white;
+
+    .main-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .home-header {
+            font-size: 7rem;
+            font-weight: 200;
+            letter-spacing: 1rem;
+            animation-name: header-drop;
+            animation-duration: 1.5s;
+            position: relative;
+        }
+
+        .home-sub-header {
+            font-family: 'Exo', sans-serif;
+            font-size: 3rem;
+            animation-name: sub-header-left;
+            animation-duration: 1.5s;
+            display: inline-block;
+            padding: 1.5rem 25% 0 25%;
         }
     }
 
-    .home-sub-header {
-        font-family: 'Exo', sans-serif;
-        font-size: 3rem;
-        animation-name: sub-header-left;
-        animation-duration: 1.5s;
-        display: inline-block;
-        padding: 1.5rem 25% 0 25%;
-    }
     .home-nav-btns {
         width: 100%;
         margin-top: 10rem;
@@ -102,7 +101,6 @@
 
             .home-header {
                 font-size: 3rem;
-                padding: 21%;
             }
 
             .home-sub-header {

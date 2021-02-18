@@ -14,11 +14,13 @@ const HomePage: React.FC = function () {
         <div className="home-page">
             <div className="content">
                 <ExpandingImage imageUrl={test} />
-                <h1 className="home-header">Kainan Doneson</h1>
-                <span className="home-sub-header">
-                    is an aspiring Full Stack Junior Developer from Brooklyn with a passion for learning and writing
-                    quality code
-                </span>
+                <div className="main-text">
+                    <h1 className="home-header">Kainan Doneson</h1>
+                    <span className="home-sub-header">
+                        is an aspiring Full Stack Junior Developer from Brooklyn with a passion for learning and writing
+                        quality code
+                    </span>
+                </div>
                 <div className="home-nav-btns">
                     <ArrowButton path="/about" animState={{ transition: 'slide-left', timeout: 1000 }}>
                         About me
