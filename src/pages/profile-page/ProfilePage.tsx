@@ -89,7 +89,7 @@ const ProfilePage: React.FC<RouteComponentProps> = function () {
                                 <li>Maintained bar and storage areas and restocked bar inventory and supplies</li>
                             </ul>
 
-                            <h3>Apple Word Trade Center</h3>
+                            <h3>Apple World Trade Center</h3>
                             <h4>Back of House Specialist (11/2018 - 01/2019)</h4>
                             <ul>
                                 <li>
