@@ -22,7 +22,6 @@ const INIT_STATE = {
 const cartReducer = function (prevState = INIT_STATE, { type, payload }: Action): RootState {
     switch (type) {
         case 'UPDATE_PROJECT_VIEW':
-            console.log('insubed');
             return {
                 ...prevState,
                 currentProject: payload,
