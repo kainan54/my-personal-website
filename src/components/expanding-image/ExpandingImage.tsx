@@ -10,7 +10,7 @@ const ExpandingImage: React.FC<Props> = function ({ imageUrl }: Props) {
             <div
                 className="expanding-image"
                 style={{
-                    backgroundImage: `linear-gradient(to right, #116466, rgba(4, 89, 110, 0.363)), url(${imageUrl})`,
+                    backgroundImage: `linear-gradient( 135deg, rgba(255, 211, 105, 0.8), rgba(21, 21, 21, 0.9) 50%, rgba(18, 18, 18, 1) ), url(${imageUrl})`,
                 }}
             />
         </div>

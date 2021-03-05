@@ -1,7 +1,9 @@
 @import '../../mixins.scss';
+@import '../../colors.scss';
+
 .project-display-card {
     border-radius: 0.3rem;
-    background-color: #181818;
+    background-color: $darkAccent;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     height: 95%;
     width: 50%;
@@ -38,7 +40,7 @@
             height: 30px;
             width: 2.3px;
             margin-left: 12px;
-            background-color: #d1e8e2;
+            background-color: $textColorLight;
             transform: rotate(45deg);
             z-index: 3;
             position: absolute;
@@ -48,7 +50,7 @@
             height: 30px;
             width: 2.3px;
             margin-left: 12px;
-            background-color: #d1e8e2;
+            background-color: $textColorLight;
             transform: rotate(135deg);
             z-index: 3;
             position: absolute;
@@ -82,7 +84,7 @@
                     box-shadow: none;
                     font-size: 1.1rem;
                     letter-spacing: 0;
-                    color: #eee7e7;
+                    color: $textColorLight;
                 }
             }
         }

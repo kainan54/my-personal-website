@@ -1,3 +1,4 @@
+@import '../../colors.scss';
 .icon-header {
     text-align: center;
     img {
@@ -8,6 +9,6 @@
 
     h1 {
         font-size: 1.2rem;
-        color: #116466;
+        color: $textColorDark;
     }
 }

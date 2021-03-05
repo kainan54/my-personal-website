@@ -1,3 +1,4 @@
+@import '../../colors.scss';
 .project-card {
     border-radius: 0.4rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -22,13 +23,11 @@
 
         .arrow-btn-bg {
             border-radius: 0.8rem;
-
-            border: #d1e8e2 2px solid;
             font-weight: 900;
             z-index: 2;
         }
         .arrow-text {
-            color: #d1e8e2;
+            color: $textColorLight;
             font-size: 3rem;
             z-index: 1;
             font-weight: 700;
@@ -56,8 +55,8 @@
         z-index: 3;
         font-size: 3rem;
         padding-bottom: 0.4rem;
-        color: #116466;
-        font-weight: bolder;
+        color: $textColorLight;
+        font-weight: 500;
     }
 }
 

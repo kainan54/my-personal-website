@@ -1,4 +1,6 @@
 @import '../../mixins.scss';
+@import '../../colors.scss';
+
 .project-viewer {
     display: flex;
     flex-direction: column;
@@ -10,14 +12,13 @@
     .project-header {
         font-size: 8rem;
         text-decoration: bolder;
-        color: #d1e8e2;
+        color: $textColorLight;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 25%;
-        background-image: linear-gradient(to right, #116466, rgba(4, 89, 110, 0.363)),
-            url('../../assets/project-bg.jpg');
+        background-image: linear-gradient(to left, $darkAccent, $bgLightTrans), url('../../assets/project-bg.jpg');
         background-size: contain;
         background-position: center;
     }

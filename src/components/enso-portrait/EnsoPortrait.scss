@@ -1,3 +1,4 @@
+@import '../../colors.scss';
 .enso-container {
     height: 20rem;
     width: 20rem;
@@ -22,12 +23,12 @@
 
     .profile-header {
         height: 40px;
-        color: #116466;
         z-index: 2;
         position: absolute;
         font-size: 2rem;
         bottom: -35px;
         right: 12px;
         text-align: center;
+        color: $textColorDark;
     }
 }
