@@ -18,7 +18,7 @@ const NavBar: React.FC<RouteComponentProps> = function ({ history, location }) {
                         <div
                             className="nav-menu-item"
                             onClick={() => {
-                                if (location.pathname === '/projects') {
+                                if (location.pathname.slice(0, 9) === '/projects') {
                                     history.push({
                                         pathname: '/home',
                                         state: { transition: 'slide-left', timeout: 1500 },
@@ -50,7 +50,7 @@ const NavBar: React.FC<RouteComponentProps> = function ({ history, location }) {
                         <div
                             className="nav-menu-item"
                             onClick={() => {
-                                if (location.pathname !== '/projects')
+                                if (location.pathname.slice(0, 9) !== '/projects')
                                     history.push({
                                         pathname: '/projects',
                                         state: { transition: 'slide-right', timeout: 1500 },

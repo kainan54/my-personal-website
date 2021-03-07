@@ -34,6 +34,7 @@ interface Props extends rProps {
     descrip: string;
     features: Array<string>;
     githubPath: string;
+    demoLink?: string;
 }
 const ProjectPopupCard: React.FC<Props> = function ({
     title,
@@ -42,6 +43,7 @@ const ProjectPopupCard: React.FC<Props> = function ({
     descrip,
     features,
     githubPath,
+    demoLink,
     UPDATE_PROJECT_VIEW,
 }: Props) {
     const renderIcons = () => {
@@ -57,6 +59,14 @@ const ProjectPopupCard: React.FC<Props> = function ({
             <div className="project-content">
                 <h3>Built With</h3>
                 <div className="project-icon-zone">{renderIcons()}</div>
+                {demoLink ? (
+                    <>
+                        <h3>Project Demo Link</h3>
+                        <a className="project-descrip" style={{ textAlign: 'center' }} href={demoLink}>
+                            {demoLink}
+                        </a>{' '}
+                    </>
+                ) : null}
                 <h3>Brief Summary</h3>
                 <p className="project-descrip">{descrip}</p>
                 <h3>Key Features</h3>

@@ -32,7 +32,8 @@ const App: React.FC<IndexProps> = function ({ location }) {
                         <Route exact path="/" component={HomePage} />
                         <Route path="/home" component={HomePage} />
                         <Route path="/about" component={ProfilePage} />
-                        <Route path="/projects" component={ProjectPage} />
+                        <Route exact path="/projects" component={ProjectPage} />
+                        <Route path="/projects/:title" component={ProjectPage} />
                     </Switch>
                 </CSSTransition>
             </TransitionGroup>

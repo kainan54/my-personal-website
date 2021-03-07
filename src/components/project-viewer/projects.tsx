@@ -15,6 +15,10 @@ import scssLogo from '../../assets/scss-logo.png';
 import personalSitePrev from '../../assets/personal-site-prev.png';
 import personalSiteVid from '../../assets/personal-website-video.mp4';
 import tsLogo from '../../assets/ts-logo.png';
+import auth0Logo from '../../assets/auth0-logo.png';
+import spotLogo from '../../assets/spot-logo.png';
+import scavPreview from '../../assets/scav-prev.png';
+import scavVid from '../../assets/scav-vid.mp4';
 interface Project {
     title: string;
     videoUrl: string;
@@ -108,6 +112,33 @@ const projects: Array<Project> = [
             { title: 'Redux', icon: reduxLogo },
             { title: 'Scss', icon: scssLogo },
         ],
+    },
+    {
+        title: 'Scavenger(wip)',
+        videoUrl: scavVid,
+        imageUrl: scavPreview,
+        id: 4,
+        githubPath: 'https://github.com/kainan54/scavenger_frontend',
+        descrip: `Mobile-friendly/preferred web application enables users to share/save/like collections of nodes(routes). Nodes can have multiple types of data stored(images, podcasts, songs, playlists, titles, and text). The routes can be created/shared/viewed using google maps API with the web geolocation API.`,
+        features: [
+            'Leveraged Auth0 to allow users to login via Spotify',
+            'Applied many aspects of the google maps API, enabling users to edit/view routes and nodes on a google map',
+            'Used React to let users attach image/text data to geolocation nodes/routes',
+            'Utilized Spotify API to query and attach sound data to geolocation based nodes/routes',
+            'Styled the web app with SCSS and responsive design principles to adapt to mobile',
+            'Designed many components using Redux to keep them as pure and declarative as possible',
+            'Written with JSDOC and Typescript to help document code(experimental docs: https://kainan54.github.io/scavenger_frontend/)',
+        ],
+        icons: [
+            { title: 'TypeScript', icon: tsLogo },
+            { title: 'React', icon: reactLogo },
+            { title: 'Redux', icon: reduxLogo },
+            { title: 'GoogleAPI', icon: gmapLogo },
+            { title: 'SpotifyAPI', icon: spotLogo },
+            { title: 'Auth0', icon: auth0Logo },
+            { title: 'Scss', icon: scssLogo },
+        ],
+        demoLink: 'https://scavenger-frontend.vercel.app/',
     },
 ].reverse();
 export default projects;

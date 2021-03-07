@@ -94,6 +94,25 @@
             text-align: left;
             font-size: 1.5rem;
         }
+        a {
+            &:visited {
+                text-decoration: none;
+                color: $textColorLight;
+            }
+            &:hover {
+                text-decoration: none;
+                color: $textColorLight;
+            }
+            &:focus {
+                text-decoration: none;
+                color: $textColorLight;
+            }
+            &:hover,
+            &:active {
+                text-decoration: none;
+                color: $textColorLight;
+            }
+        }
         .project-features {
             font-size: 1.5rem;
             padding-left: 3rem;
