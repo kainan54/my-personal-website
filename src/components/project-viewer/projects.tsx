@@ -18,7 +18,7 @@ import tsLogo from '../../assets/ts-logo.png';
 import auth0Logo from '../../assets/auth0-logo.png';
 import spotLogo from '../../assets/spot-logo.png';
 import scavPreview from '../../assets/scav-prev.png';
-import scavVid from '../../assets/scav-vid.mp4';
+import scavVid from '../../assets/scav-vid2.mp4';
 interface Project {
     title: string;
     videoUrl: string;
