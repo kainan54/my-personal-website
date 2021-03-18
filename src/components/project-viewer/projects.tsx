@@ -17,8 +17,12 @@ import personalSiteVid from '../../assets/personal-website-video.mp4';
 import tsLogo from '../../assets/ts-logo.png';
 import auth0Logo from '../../assets/auth0-logo.png';
 import spotLogo from '../../assets/spot-logo.png';
+import nodeLogo from '../../assets/node-logo.png';
+import mongoLogo from '../../assets/mongo-logo.png';
 import scavPreview from '../../assets/scav-prev.png';
 import scavVid from '../../assets/scav-vid2.mp4';
+import scavVid2 from '../../assets/scav2-vid.mov';
+import scavPreview2 from '../../assets/scav-2-prev.png';
 interface Project {
     title: string;
     videoUrl: string;
@@ -117,7 +121,7 @@ const projects: Array<Project> = [
         title: 'Scavenger(wip)',
         videoUrl: scavVid,
         imageUrl: scavPreview,
-        id: 4,
+        id: 5,
         githubPath: 'https://github.com/kainan54/scavenger_frontend',
         descrip: `Mobile-friendly/preferred web application enables users to share/save/like collections of nodes(routes). Nodes can have multiple types of data stored(images, podcasts, songs, playlists, titles, and text). The routes can be created/shared/viewed using google maps API with the web geolocation API.`,
         features: [
@@ -133,6 +137,34 @@ const projects: Array<Project> = [
             { title: 'TypeScript', icon: tsLogo },
             { title: 'React', icon: reactLogo },
             { title: 'Redux', icon: reduxLogo },
+            { title: 'GoogleAPI', icon: gmapLogo },
+            { title: 'SpotifyAPI', icon: spotLogo },
+            { title: 'Auth0', icon: auth0Logo },
+            { title: 'Scss', icon: scssLogo },
+        ],
+        demoLink: 'https://scavenger-frontend.vercel.app/',
+    },
+    {
+        title: 'Scavenger-Phase-2(wip)',
+        videoUrl: scavVid2,
+        imageUrl: scavPreview2,
+        id: 6,
+        githubPath: 'https://github.com/kainan54/scavenger_frontend',
+        descrip: `Mobile-friendly/preferred web application enables users to share/save/like collections of nodes(routes). Nodes can have multiple types of data stored(images, podcasts, songs, playlists, titles, and text). The routes can be created/shared/viewed using google maps API with the web geolocation API.`,
+        features: [
+            'Leveraged Auth0 to authorize users(in the frontend) by logging in with Spotify',
+            'Utilized Spotify API + Google Maps API + React to query and attach sound data, images, and text to geolocation based nodes/routes',
+            'Used Node.JS + Express + MongoDB + Auth0 to manage authorization, user models, route models, and geospatial queries for the backend',
+            'Styled the web app with SCSS and responsive design principles to adapt to mobile',
+            'Designed many components using Redux to keep them as pure and declarative as possible',
+            'Written with JSDOC and Typescript to help document code(experimental docs: https://kainan54.github.io/scavenger_frontend/)',
+        ],
+        icons: [
+            { title: 'TypeScript', icon: tsLogo },
+            { title: 'React', icon: reactLogo },
+            { title: 'Redux', icon: reduxLogo },
+            { title: 'NodeJs/Express', icon: nodeLogo },
+            { title: 'MongoDB', icon: mongoLogo },
             { title: 'GoogleAPI', icon: gmapLogo },
             { title: 'SpotifyAPI', icon: spotLogo },
             { title: 'Auth0', icon: auth0Logo },
